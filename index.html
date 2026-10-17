@@ -61,6 +61,8 @@ html[data-theme=dark] .chip[aria-pressed=true]{background:var(--brand);border-co
 footer{padding:36px clamp(16px,6vw,96px);border-top:1px solid var(--line);color:var(--muted);display:flex;align-items:center;gap:12px}
 .card{cursor:pointer}.card:hover .tile{box-shadow:inset 0 0 0 2px var(--brand)}.card:focus-visible{outline:3px solid var(--brand);outline-offset:4px}
 button.btn{border:0;font:inherit;font-weight:500;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) :is(.cf .btn,dialog .btn,#tc){background:#c23f23}:root:not([data-theme=light]) :is(.cf .btn,dialog .btn,#tc):hover{background:#a8341b}}
+:root[data-theme=dark] :is(.cf .btn,dialog .btn,#tc){background:#c23f23}
 dialog{border:0;padding:24px;width:min(92vw,460px);background:var(--surface);color:var(--ink);border-radius:2px}dialog::backdrop{background:rgba(0,0,0,.55)}dialog .tile{margin-bottom:16px}dialog h3{font-weight:500;font-size:24px;margin:0 0 6px}dialog p{color:var(--muted);margin:0 0 20px}
 .x{float:inline-end;background:none;border:0;color:var(--ink);font:inherit;cursor:pointer;text-decoration:underline;padding:0 0 8px}
 .about{display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,5vw,72px)}.about h2{max-width:14ch}.pts{display:grid;gap:28px}.pts h3{margin:0 0 4px;font-weight:500;font-size:21px}.pts p{margin:0;color:var(--muted);max-width:50ch}
