@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BALANCE | Furniture, lights and tableau</title>
+<meta name="description" content="BALANCE makes multifunctional furniture, lights and framed Arabic calligraphy prints that balance function and aesthetics.">
+<meta property="og:title" content="BALANCE | Furniture, lights and tableau"><meta property="og:description" content="Multifunctional furniture, lights and Arabic calligraphy prints that balance function and aesthetics."><meta property="og:type" content="website"><meta name="theme-color" content="#d1472a">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"BALANCE","description":"Multifunctional furniture, lights and framed Arabic calligraphy prints that balance function and aesthetics."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f4f2;--surface:#fff;--ink:#2f2e2d;--muted:#66625d;--brand:#d1472a;--oak:#d9bd98;--tile:#ece7e0;--line:#d8d3cb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1c1b;--surface:#262422;--ink:#f0ece6;--muted:#a9a39b;--tile:#ece7e0;--line:#45403a}}
+:root[data-theme="dark"]{--bg:#1d1c1b;--surface:#262422;--ink:#f0ece6;--muted:#a9a39b;--tile:#ece7e0;--line:#45403a}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 110px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Jost",system-ui,sans-serif}
+html[lang=ar] body{font-family:"Tajawal","Jost",system-ui,sans-serif;line-height:1.8}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:24px;padding:12px clamp(16px,4vw,48px)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:300;font-size:22px;letter-spacing:.14em;color:var(--ink);text-decoration:none;margin-inline-end:auto}
+.brand svg{width:26px;height:26px}
+nav{display:flex;gap:22px}
+nav a,.lang{color:var(--ink);text-decoration:none;font-size:16px;background:none;border:0;padding:6px 2px;cursor:pointer;font-family:inherit}
+nav a:hover{color:var(--brand)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.lang{border:1px solid var(--line);padding:6px 14px;border-radius:999px}
+.hero{background:#d1472a;color:#fff;display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:32px;padding:clamp(40px,8vw,110px) clamp(16px,6vw,96px);min-height:68vh}
+.hero h1{font-weight:300;font-size:clamp(36px,5.6vw,72px);line-height:1.08;margin:0 0 20px;max-width:14ch}
+html[lang=ar] .hero h1{line-height:1.3;font-weight:400}
+.hero p{font-size:19px;max-width:42ch;margin:0 0 32px}
+.btn{display:inline-block;background:#2f2e2d;color:#fff;padding:14px 28px;text-decoration:none;font-weight:500;border-radius:2px}
+.btn:hover{background:#000}
+.cairn{width:min(100%,340px);justify-self:center;overflow:visible}
+.cairn path{fill:#2f2e2d;animation:settle .9s cubic-bezier(.3,1.4,.5,1) both}
+.cairn path:nth-child(1){animation-delay:.1s}.cairn path:nth-child(2){animation-delay:.4s}.cairn path:nth-child(3){animation-delay:.7s}.cairn path:nth-child(4){animation-delay:1s}
+@keyframes settle{from{transform:translateY(-70px);opacity:0}to{transform:none;opacity:1}}
+section.col{padding:clamp(48px,7vw,96px) clamp(16px,6vw,96px)}
+section.col h2{font-weight:300;font-size:clamp(30px,3.6vw,46px);margin:0 0 8px}
+section.col>p{color:var(--muted);margin:0 0 36px;max-width:56ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.card{margin:0}
+.tile{background:var(--tile);aspect-ratio:5/4;display:grid;place-items:center;border-radius:2px}
+.tile svg{width:78%;height:auto;overflow:visible}
+.card h3{font-weight:500;font-size:21px;margin:14px 0 2px}
+.card p{margin:0;color:var(--muted);font-size:16px;max-width:34ch}
+.alt{background:var(--surface)}
+.cfg{display:grid;grid-template-columns:minmax(220px,1fr) 1.3fr;gap:clamp(24px,5vw,64px);align-items:center}
+.cfg .tile{aspect-ratio:1}
+.grp{margin-bottom:24px}
+.grp b{display:block;font-weight:500;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;background:none;color:var(--ink);border:1px solid var(--line);padding:8px 16px;border-radius:2px;cursor:pointer}
+.chip[aria-pressed=true]{background:#2f2e2d;color:#fff;border-color:#2f2e2d}
+html[data-theme=dark] .chip[aria-pressed=true]{background:var(--brand);border-color:var(--brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]) .chip[aria-pressed=true]{background:var(--brand);border-color:var(--brand)}}
+.sum{font-size:20px;margin-top:8px;color:var(--ink)}
+footer{padding:36px clamp(16px,6vw,96px);border-top:1px solid var(--line);color:var(--muted);display:flex;align-items:center;gap:12px}
+.card{cursor:pointer}.card:hover .tile{box-shadow:inset 0 0 0 2px var(--brand)}.card:focus-visible{outline:3px solid var(--brand);outline-offset:4px}
+button.btn{border:0;font:inherit;font-weight:500;cursor:pointer}
+dialog{border:0;padding:24px;width:min(92vw,460px);background:var(--surface);color:var(--ink);border-radius:2px}dialog::backdrop{background:rgba(0,0,0,.55)}dialog .tile{margin-bottom:16px}dialog h3{font-weight:500;font-size:24px;margin:0 0 6px}dialog p{color:var(--muted);margin:0 0 20px}
+.x{float:inline-end;background:none;border:0;color:var(--ink);font:inherit;cursor:pointer;text-decoration:underline;padding:0 0 8px}
+.about{display:grid;grid-template-columns:1fr 2fr;gap:clamp(24px,5vw,72px)}.about h2{max-width:14ch}.pts{display:grid;gap:28px}.pts h3{margin:0 0 4px;font-weight:500;font-size:21px}.pts p{margin:0;color:var(--muted);max-width:50ch}
+.cf{display:grid;gap:16px;max-width:560px}.cf label{display:grid;gap:6px;font-weight:500}.cf input,.cf select,.cf textarea{font:inherit;padding:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:2px}.cf textarea{min-height:120px}#ok{margin:12px 0 0;color:var(--muted)}
+footer{flex-wrap:wrap}.fl{margin-inline-start:auto;display:flex;gap:20px}.fl a{color:var(--muted);text-decoration:none}.fl a:hover{color:var(--brand)}
+@media (max-width:760px){.hero,.cfg,.about{grid-template-columns:1fr}.hero{min-height:0}header{flex-wrap:wrap;gap:8px 16px}nav{order:3;width:100%;overflow-x:auto;gap:20px}.cairn{width:200px}}
+@media (prefers-reduced-motion:reduce){.cairn path{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="#top" aria-label="BALANCE">
+<svg viewBox="0 0 60 60" aria-hidden="true"><g fill="currentColor"><ellipse cx="30" cy="8" rx="6" ry="3.5"/><ellipse cx="30" cy="19" rx="9" ry="5"/><ellipse cx="30" cy="32" rx="14" ry="7"/><ellipse cx="30" cy="48" rx="19" ry="9"/></g></svg>
+BALANCE</a>
+<nav>
+<a href="#furniture" data-i18n="nf">Furniture</a>
+<a href="#lights" data-i18n="nl">Lights</a>
+<a href="#tableau" data-i18n="nt">Tableau</a>
+<a href="#about" data-i18n="na">About</a>
+<a href="#contact" data-i18n="nc">Contact</a>
+</nav>
+<button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+</header>
+
+<main id="top">
+<section class="hero">
+<div>
+<h1 data-i18n="h1">Furniture, lights and art that balance use and looks.</h1>
+<p data-i18n="hp">Each piece is designed to do more than one job, and to look right while it does.</p>
+<a class="btn" href="#furniture" data-i18n="cta">Browse furniture</a>
+</div>
+<svg class="cairn" viewBox="0 0 200 240" role="img" aria-label="Stacked stones">
+<path d="M76 212c-6-18 14-30 38-30s40 14 34 30c-4 12-26 16-48 16s-20-4-24-16z"/>
+<path d="M58 138c-4-14 12-24 42-24 28 0 40 10 34 22-4 8-18 14-34 14s-38-2-42-12z"/>
+<path d="M78 84c-2-10 8-16 24-16s26 6 22 14c-4 7-14 10-24 10s-20-2-22-8z"/>
+<path d="M92 36c-1-6 5-10 14-10s14 4 12 9c-3 5-9 7-14 7s-11-1-12-6z"/>
+</svg>
+</section>
+
+<section class="col" id="furniture">
+<h2 data-i18n="tf">Furniture</h2>
+<p data-i18n="sf">Multifunctional pieces in light oak, with storage built into the shape.</p>
+<div class="grid">
+<figure class="card"><div class="tile"><svg viewBox="0 0 200 160" role="img" aria-label="Side table"><g fill="#d9bd98" stroke="#2f2e2d" stroke-width="2"><rect x="62" y="18" width="76" height="34" rx="4"/><rect x="62" y="96" width="76" height="46" rx="8"/></g><g stroke="#2f2e2d" stroke-width="2" fill="none"><path d="M138 35v81M62 35v81M72 30h56M72 104h56M72 118h56M72 130h56"/><path d="M90 18c0-14 20-14 20 0" stroke-width="3"/></g></svg></div>
+<h3>Stack</h3><p data-i18n="p1">Side table with open shelves and a hook for headphones.</p></figure>
+<figure class="card"><div class="tile"><svg viewBox="0 0 200 160" role="img" aria-label="Stool"><g fill="#d9bd98" stroke="#2f2e2d" stroke-width="2"><path d="M54 40h92l-8 34H62z"/><path d="M66 74l-14 70h12l12-70zM134 74l14 70h-12l-12-70z"/></g><path d="M80 48h40v8H80z" fill="#2f2e2d" opacity=".25"/><path d="M70 112h60" stroke="#2f2e2d" stroke-width="4"/></svg></div>
+<h3>Perch</h3><p data-i18n="p2">Stool with a tray in the seat and a shelf for shoes.</p></figure>
+<figure class="card"><div class="tile"><svg viewBox="0 0 200 160" role="img" aria-label="Desk"><g stroke="#2f2e2d" stroke-width="2"><path d="M30 56h140v14H30z" fill="#d9bd98"/><path d="M50 70l-16 74h12l16-74zM150 70l16 74h-12l-16-74z" fill="#d9bd98"/><rect x="30" y="62" width="140" height="14" rx="7" fill="#d1472a"/></g><path d="M80 48h28l4-12H84zM120 50h24" stroke="#2f2e2d" stroke-width="2" fill="none"/></svg></div>
+<h3>Roll</h3><p data-i18n="p3">Desk with a leather roll for storage and cable slots in the top.</p></figure>
+</div>
+</section>
+
+<section class="col alt" id="lights">
+<h2 data-i18n="tl">Lights</h2>
+<p data-i18n="sl">Soft light for tables, floors, walls and ceilings.</p>
+<div class="grid">
+<figure class="card"><div class="tile"><svg viewBox="0 0 200 160" role="img" aria-label="Table light"><circle cx="100" cy="68" r="46" fill="#f6df9a" opacity=".5"/><circle cx="100" cy="68" r="34" fill="#fff6d6" stroke="#2f2e2d" stroke-width="2"/><path d="M78 128q22-26 44 0z" fill="#e0a82e" stroke="#2f2e2d" stroke-width="2"/></svg></div>
+<h3>Orb</h3><p data-i18n="p4">Table light with a round glass shade.</p></figure>
+<figure class="card"><div class="tile"><svg viewBox="0 0 200 160" role="img" aria-label="Floor lamp"><g stroke="#2f2e2d" stroke-width="2"><path d="M100 22v104" fill="none"/><rect x="88" y="14" width="14" height="14" fill="#e0a82e"/><rect x="100" y="20" width="14" height="14" fill="#d1472a"/><rect x="90" y="106" width="20" height="28" fill="#d1472a"/></g></svg></div>
+<h3>Reed</h3><p data-i18n="p5">Slim floor lamp with two colour blocks.</p></figure>
+</div>
+</section>
+
+<section class="col" id="tableau">
+<h2 data-i18n="tt">Tableau</h2>
+<p data-i18n="st">Framed prints with Arabic calligraphy. Choose frame and size.</p>
+<div class="cfg">
+<div class="tile"><svg viewBox="0 0 200 200" role="img" aria-label="Print preview">
+<rect id="pf" x="50" y="25" width="100" height="150" fill="#fbf8f3" stroke="#d9bd98" stroke-width="7"/>
+<circle id="pc" cx="100" cy="85" r="22" fill="#d1472a" opacity=".85"/>
+<text x="100" y="125" text-anchor="middle" font-family="Tajawal,sans-serif" font-size="22" fill="#2f2e2d">الحمد لله</text>
+<rect id="pg" x="50" y="25" width="100" height="150" fill="#fff" opacity="0"/>
+</svg></div>
+<div>
+<div class="grp"><b data-i18n="lf">Frame</b><div class="chips" id="frames">
+<button class="chip" type="button" data-k="none" data-i18n="f0" aria-pressed="false">No frame</button>
+<button class="chip" type="button" data-k="wood" data-i18n="f1" aria-pressed="true">Wood frame</button>
+<button class="chip" type="button" data-k="acr" data-i18n="f2" aria-pressed="false">Acrylic glass</button></div></div>
+<div class="grp"><b data-i18n="ls">Size</b><div class="chips" id="sizes">
+<button class="chip" type="button" data-k="30x40" aria-pressed="false">30×40</button>
+<button class="chip" type="button" data-k="40x60" aria-pressed="false">40×60</button>
+<button class="chip" type="button" data-k="60x80" aria-pressed="true">60×80</button>
+<button class="chip" type="button" data-k="70x100" aria-pressed="false">70×100</button></div></div>
+<div class="sum" id="sum" aria-live="polite"></div>
+<button class="btn" id="tc" type="button" data-i18n="tc" style="margin-top:20px">Ask about this print</button>
+</div>
+</div>
+</section>
+<section class="col alt" id="about">
+<div class="about">
+<h2 data-i18n="ah">Made to be used, and made to be looked at.</h2>
+<div class="pts">
+<div><h3 data-i18n="a1h">Multifunctional</h3><p data-i18n="a1p">One piece, more than one job: storage, a hook, a tray, a cable slot.</p></div>
+<div><h3 data-i18n="a2h">Thoughtful</h3><p data-i18n="a2p">Details are decided by how people really sit, work and read.</p></div>
+<div><h3 data-i18n="a3h">Easy to use</h3><p data-i18n="a3p">No manuals. You see how it works the moment you see it.</p></div>
+</div></div>
+</section>
+
+<section class="col" id="contact">
+<h2 data-i18n="ch">Talk to us</h2>
+<p data-i18n="cp">Ask about a piece, a size or a custom order.</p>
+<form class="cf" id="cf">
+<label><span data-i18n="cn">Name</span><input name="nm" required autocomplete="name"></label>
+<label><span data-i18n="ce">Email</span><input name="em" type="email" required autocomplete="email"></label>
+<label><span data-i18n="cj">Piece</span><select name="pj" id="pj"><option data-i18n="gi">General enquiry</option><option>Stack</option><option>Perch</option><option>Roll</option><option>Orb</option><option>Reed</option><option>Tableau</option></select></label>
+<label><span data-i18n="cm">Message</span><textarea name="ms" required></textarea></label>
+<button class="btn" type="submit" data-i18n="cs">Send message</button>
+</form>
+<p id="ok" aria-live="polite"></p>
+</section>
+</main>
+<footer><span data-i18n="ft">BALANCE. Function and aesthetics in balance.</span>
+<div class="fl"><a href="#furniture" data-i18n="nf">Furniture</a><a href="#lights" data-i18n="nl">Lights</a><a href="#tableau" data-i18n="nt">Tableau</a><a href="#contact" data-i18n="nc">Contact</a></div></footer>
+<dialog id="dlg" aria-labelledby="dn"><button class="x" id="dx" type="button" data-i18n="dx">Close</button><div class="tile" id="dt"></div><h3 id="dn"></h3><p id="dd"></p><button class="btn" id="dc" type="button" data-i18n="dc">Ask about this piece</button></dialog>
+
+<script>
+var D={en:{nf:"Furniture",nl:"Lights",nt:"Tableau",h1:"Furniture, lights and art that balance use and looks.",hp:"Each piece is designed to do more than one job, and to look right while it does.",cta:"Browse furniture",tf:"Furniture",sf:"Multifunctional pieces in light oak, with storage built into the shape.",p1:"Side table with open shelves and a hook for headphones.",p2:"Stool with a tray in the seat and a shelf for shoes.",p3:"Desk with a leather roll for storage and cable slots in the top.",tl:"Lights",sl:"Soft light for tables, floors, walls and ceilings.",p4:"Table light with a round glass shade.",p5:"Slim floor lamp with two colour blocks.",tt:"Tableau",st:"Framed prints with Arabic calligraphy. Choose frame and size.",lf:"Frame",ls:"Size",f0:"No frame",f1:"Wood frame",f2:"Acrylic glass",ft:"BALANCE. Function and aesthetics in balance.",pick:"Your pick: {f}, {s} cm",btn:"العربية",na:"About",nc:"Contact",ah:"Made to be used, and made to be looked at.",a1h:"Multifunctional",a1p:"One piece, more than one job: storage, a hook, a tray, a cable slot.",a2h:"Thoughtful",a2p:"Details are decided by how people really sit, work and read.",a3h:"Easy to use",a3p:"No manuals. You see how it works the moment you see it.",ch:"Talk to us",cp:"Ask about a piece, a size or a custom order.",cn:"Name",ce:"Email",cj:"Piece",gi:"General enquiry",cm:"Message",cs:"Send message",cok:"Your email app should open. If it doesn't, write to balance.st6@gmail.com.",dx:"Close",dc:"Ask about this piece",tc:"Ask about this print"},
+ar:{nf:"الأثاث",nl:"الإضاءة",nt:"اللوحات",h1:"أثاث وإضاءة وفن يوازن بين الاستخدام والشكل.",hp:"كل قطعة مصممة لتؤدي أكثر من وظيفة، وتبدو جميلة وهي تفعل ذلك.",cta:"تصفّح الأثاث",tf:"الأثاث",sf:"قطع متعددة الوظائف من خشب البلوط الفاتح، والتخزين جزء من شكلها.",p1:"ترابيزة جانبية برفوف مفتوحة وخطاف للسماعات.",p2:"ستول بصينية في المقعد ورف للأحذية.",p3:"مكتب بلفة جلدية للتخزين وفتحات للكابلات في السطح.",tl:"الإضاءة",sl:"إضاءة هادئة للطاولات والأرضيات والجدران والأسقف.",p4:"إضاءة طاولة بغطاء زجاجي دائري.",p5:"أباجورة أرضية رفيعة بكتلتين ملونتين.",tt:"اللوحات",st:"لوحات مؤطرة بخط عربي. اختر الإطار والمقاس.",lf:"الإطار",ls:"المقاس",f0:"بدون إطار",f1:"إطار خشبي",f2:"زجاج أكريليك",ft:"BALANCE. توازن بين الوظيفة والجمال.",pick:"اختيارك: {f}، {s} سم",btn:"English",na:"من نحن",nc:"تواصل",ah:"مصنوعة لتُستخدم، ومصنوعة لتُرى.",a1h:"متعددة الوظائف",a1p:"قطعة واحدة بأكثر من وظيفة: تخزين وخطاف وصينية وفتحة كابلات.",a2h:"مدروسة",a2p:"تُحدَّد التفاصيل بحسب طريقة الجلوس والعمل والقراءة الفعلية.",a3h:"سهلة الاستخدام",a3p:"بدون كتيبات. تفهم طريقة عملها بمجرد النظر إليها.",ch:"تواصل معنا",cp:"اسأل عن قطعة أو مقاس أو طلب خاص.",cn:"الاسم",ce:"البريد الإلكتروني",cj:"القطعة",gi:"استفسار عام",cm:"رسالتك",cs:"إرسال الرسالة",cok:"سيفتح تطبيق البريد. إن لم يفتح، راسلنا على balance.st6@gmail.com.",dx:"إغلاق",dc:"اسأل عن هذه القطعة",tc:"اسأل عن هذه اللوحة"}};
+var L="en",F="wood",S="60x80",$=function(s){return document.querySelector(s)};
+function draw(){
+var p=S.split("x"),w=p[0]/p[1],h=150,wd=Math.min(130,h*w),pf=$("#pf"),x=100-wd/2;
+pf.setAttribute("x",x);pf.setAttribute("width",wd);
+pf.setAttribute("stroke",F=="none"?"#cfc9c0":"#d9bd98");pf.setAttribute("stroke-width",F=="none"?1:7);
+var g=$("#pg");g.setAttribute("x",x);g.setAttribute("width",wd);g.setAttribute("opacity",F=="acr"?.28:0);
+var fn={none:"f0",wood:"f1",acr:"f2"}[F];
+$("#sum").textContent=D[L].pick.replace("{f}",D[L][fn]).replace("{s}",S.replace("x","×"));}
+function setLang(l){L=l;var r=document.documentElement;r.lang=l;r.dir=l=="ar"?"rtl":"ltr";
+document.querySelectorAll("[data-i18n]").forEach(function(e){e.textContent=D[l][e.dataset.i18n]});
+$("#lang").textContent=D[l].btn;$("#ok").textContent="";draw();}
+$("#lang").onclick=function(){setLang(L=="en"?"ar":"en")};
+function chips(id,set){document.querySelectorAll(id+" .chip").forEach(function(b){b.onclick=function(){
+document.querySelectorAll(id+" .chip").forEach(function(c){c.setAttribute("aria-pressed",c==b)});set(b.dataset.k);draw();}})}
+chips("#frames",function(k){F=k});chips("#sizes",function(k){S=k});
+var dlg=$("#dlg");
+document.querySelectorAll(".card").forEach(function(c){c.tabIndex=0;c.setAttribute("role","button");
+function open(){$("#dt").innerHTML=c.querySelector(".tile").innerHTML;$("#dn").textContent=c.querySelector("h3").textContent;$("#dd").textContent=c.querySelector("p").textContent;dlg.dataset.p=c.querySelector("h3").textContent;dlg.showModal();}
+c.onclick=open;c.onkeydown=function(e){if(e.key=="Enter"||e.key==" "){e.preventDefault();open()}}});
+$("#dx").onclick=function(){dlg.close()};
+$("#dc").onclick=function(){$("#pj").value=dlg.dataset.p;dlg.close();$("#contact").scrollIntoView()};
+$("#cf").onsubmit=function(e){e.preventDefault();var f=e.target,s="BALANCE enquiry: "+f.pj.value,b=f.nm.value+" ("+f.em.value+")\n\n"+f.ms.value;location.href="mailto:balance.st6@gmail.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent(b);$("#ok").textContent=D[L].cok};
+$("#tc").onclick=function(){$("#pj").value="Tableau";$("#cf").elements.ms.value=$("#sum").textContent;$("#contact").scrollIntoView()};
+setLang(/^ar/i.test(navigator.language||"")?"ar":"en");
+</script>
+</body>
+</html>
